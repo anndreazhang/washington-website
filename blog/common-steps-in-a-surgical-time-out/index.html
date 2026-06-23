@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Common Steps in a Surgical Time-out &mdash; Washington Anesthesia Partners</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../../css/styles.css" />
+</head>
+<body>
+  <header class="nav scrolled" role="banner">
+    <div class="container nav__inner">
+      <a href="../../index.html" class="nav__logo">Washington Anesthesia Partners<span>Ambulatory Anesthesia Services</span></a>
+      <nav aria-label="Primary"><ul class="nav__links"><li><a href="../../index.html#about">About</a></li><li><a href="../../index.html#services">Services</a></li><li><a href="../index.html">Blog</a></li><li><a href="../../index.html#contact" class="nav__cta">Contact Us</a></li></ul></nav>
+      <button class="nav__hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav"><span></span><span></span><span></span></button>
+    </div>
+    <nav class="nav__mobile" id="mobile-nav" aria-label="Mobile"><a href="../../index.html#about">About</a><a href="../../index.html#services">Services</a><a href="../index.html">Blog</a><a href="../../index.html#contact">Contact Us</a></nav>
+  </header>
+  <main>
+    <div class="post-hero">
+      <div class="container">
+        <div class="post-hero__meta"><time class="post-hero__date" datetime="2026-02-02">February 2, 2026</time></div>
+        <h1 class="post-hero__title">Common Steps in a Surgical Time-out</h1>
+      </div>
+    </div>
+    <section class="post-body">
+      <div class="container">
+        <div class="post-body__layout">
+          <article class="post-content">
+            <img class="post-featured-img" src="../../images/blog-surgical-timeout.jpg" alt="Common Steps in a Surgical Time-out" />
+            <p>A surgical time-out is a structured pause that occurs immediately before an invasive procedure begins, designed to enhance patient safety and reduce preventable errors. Although standardized core components and modifications are informed by a specific facility or region, the surgical time-out is a practice used worldwide and is strongly supported by patient safety organizations and professional medical bodies. The purpose of the time-out is to ensure that every member of the clinical team shares a common understanding of the patient, the procedure, and the plan before proceeding.</p>
+            <p>The process typically begins once the patient is positioned and prepared but before the first incision or procedural step. All nonessential activity is intentionally stopped so the team can focus exclusively on verification. Active participation from all healthcare providers present is expected, including surgeons, anesthesiologists, nurses, and technicians. This collective attention reinforces shared responsibility and minimizes assumptions or hierarchy-related communication barriers.</p>
+            <p>One of the first steps in a surgical time-out is confirming the patient's identity. This is usually done by matching at least two identifiers, such as the patient's name and date of birth, against medical records, wristbands, and verbal confirmation when possible. This step helps prevent wrong-patient errors, which, although rare, can have serious consequences.</p>
+            <p>The team then verifies the planned procedure. This includes stating the exact operation or intervention to be performed and ensuring that it matches the consent documentation and preoperative plan. Clear verbal confirmation helps prevent wrong-procedure events, especially in environments where multiple similar surgeries may occur consecutively or where last-minute changes have been made.</p>
+            <p>Verification of the correct surgical site and side is another essential component. The surgeon typically confirms that the site has been appropriately marked and that the marking corresponds with imaging, consent forms, and the operative plan. This step is particularly critical in procedures involving paired organs or limbs, as wrong-site surgery is a well-documented but preventable error.</p>
+            <p>It is also important to confirm patient positioning and readiness. The team ensures that the patient is positioned safely, pressure points are protected, and necessary equipment is properly set up. This reduces the risk of positioning-related injuries and procedural delays once surgery has begun.</p>
+            <p>Anesthesia-related steps are commonly part of the surgical time-out as well. The anesthesia provider may confirm the patient's airway status, allergies, antibiotic administration, and any anticipated challenges. This shared awareness allows the surgical team to anticipate and respond more effectively to complications.</p>
+            <p>Equipment availability and sterility are also reviewed. The team confirms that required instruments, implants, imaging, and blood products are present and functioning. This step helps prevent interruptions, extended operative time, and safety risks associated with missing or malfunctioning equipment.</p>
+            <p>Finally, the time-out provides an opportunity for team members to voice concerns or ask questions. It is essential to reinforce a culture of safety that empowers all participants to speak up if something seems unclear or incorrect. This aspect is particularly important in complex cases where subtle details can significantly affect outcomes.</p>
+          </article>
+          <aside class="post-sidebar">
+            <a href="../index.html" class="post-sidebar__back">&larr; Back to Blog</a>
+            <div class="post-sidebar__related">
+              <div class="post-sidebar__related-title">More Posts</div>
+              <div class="related-post"><a href="../preoperative-oral-medication/index.html">Preoperative Oral Medication for Analgesia</a><span>May 18, 2026</span></div>
+              <div class="related-post"><a href="../nsaids-for-postoperative-analgesia/index.html">Safety Profile of NSAIDs for Postoperative Analgesia</a><span>April 15, 2026</span></div>
+              <div class="related-post"><a href="../scope-of-anesthesia-practice/index.html">The Scope of Anesthesia Practice</a><span>April 28, 2023</span></div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer" role="contentinfo"><div class="container"><div class="footer__bottom" style="border-top:none;padding-top:0;"><p class="footer__copy">&copy; <span id="footer-year">2026</span> Washington Anesthesia Partners. All rights reserved.</p><div class="footer__bottom-links"><a href="../../index.html">Home</a><a href="../index.html">Blog</a><a href="../../privacy-policy.html">Privacy Policy</a></div></div></div></footer>
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const mobileNav = document.getElementById('mobile-nav');
+    hamburger.addEventListener('click', () => { const open = mobileNav.classList.toggle('open'); hamburger.setAttribute('aria-expanded', open); });
+    document.getElementById('footer-year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

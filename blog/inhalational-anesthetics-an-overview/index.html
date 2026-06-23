@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inhalational Anesthetics: An Overview &mdash; Washington Anesthesia Partners</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../../css/styles.css" />
+</head>
+<body>
+  <header class="nav scrolled" role="banner">
+    <div class="container nav__inner">
+      <a href="../../index.html" class="nav__logo">Washington Anesthesia Partners<span>Ambulatory Anesthesia Services</span></a>
+      <nav aria-label="Primary"><ul class="nav__links"><li><a href="../../index.html#about">About</a></li><li><a href="../../index.html#services">Services</a></li><li><a href="../index.html">Blog</a></li><li><a href="../../index.html#contact" class="nav__cta">Contact Us</a></li></ul></nav>
+      <button class="nav__hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav"><span></span><span></span><span></span></button>
+    </div>
+    <nav class="nav__mobile" id="mobile-nav" aria-label="Mobile"><a href="../../index.html#about">About</a><a href="../../index.html#services">Services</a><a href="../index.html">Blog</a><a href="../../index.html#contact">Contact Us</a></nav>
+  </header>
+  <main>
+    <div class="post-hero">
+      <div class="container">
+        <div class="post-hero__meta"><time class="post-hero__date" datetime="2025-07-21">July 21, 2025</time></div>
+        <h1 class="post-hero__title">Inhalational Anesthetics: An Overview</h1>
+      </div>
+    </div>
+    <section class="post-body">
+      <div class="container">
+        <div class="post-body__layout">
+          <article class="post-content">
+            <img class="post-featured-img" src="../../images/blog-inhalational.jpg" alt="Inhalational Anesthetics: An Overview" />
+            <p>Inhalational anesthetics represent a group of medications used to induce and maintain general anesthesia during surgical procedures. These drugs enter through the respiratory system via mask or breathing tube, reaching the brain through the bloodstream to produce unconsciousness.</p>
+            <p>The history of inhalational anesthetics extends to the 19th century with ether and chloroform, though modern variants like sevoflurane, desflurane, and isoflurane offer improved safety profiles. Anesthesiologists use specialized equipment to monitor and adjust drug concentrations in real time.</p>
+            <p>When administered, the anesthetic diffuses through the lungs into the bloodstream, suppressing central nervous system activity. This produces unconsciousness, muscle relaxation, and pain insensitivity while preventing surgical memory formation. Depth can be adjusted by changing gas concentration, providing medical teams with control and flexibility.</p>
+            <p>A key advantage involves rapid elimination—these agents are primarily exhaled unchanged through the lungs, allowing patients to regain consciousness quickly. Post-operative effects like grogginess or nausea typically resolve with supportive care.</p>
+            <p>While generally safe, potential side effects include shivering, confusion, and nausea. Serious complications remain rare but include allergic reactions and malignant hyperthermia—a rare and potentially life-threatening reaction that can cause a rapid increase in body temperature and muscle rigidity.</p>
+            <p>Environmental considerations are significant, as some inhalational anesthetics function as potent greenhouse gases. The medical community actively explores greener alternatives and improved delivery systems to minimize atmospheric waste.</p>
+            <p>Patients typically receive pre-operative sedation and explanation from their anesthesiologist. During procedures, vital signs undergo close monitoring. Recovery areas ensure safe transitions to full consciousness post-surgery.</p>
+          </article>
+          <aside class="post-sidebar">
+            <a href="../index.html" class="post-sidebar__back">&larr; Back to Blog</a>
+            <div class="post-sidebar__related">
+              <div class="post-sidebar__related-title">More Posts</div>
+              <div class="related-post"><a href="../preoperative-oral-medication/index.html">Preoperative Oral Medication for Analgesia</a><span>May 18, 2026</span></div>
+              <div class="related-post"><a href="../nsaids-for-postoperative-analgesia/index.html">Safety Profile of NSAIDs for Postoperative Analgesia</a><span>April 15, 2026</span></div>
+              <div class="related-post"><a href="../scope-of-anesthesia-practice/index.html">The Scope of Anesthesia Practice</a><span>April 28, 2023</span></div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer" role="contentinfo"><div class="container"><div class="footer__bottom" style="border-top:none;padding-top:0;"><p class="footer__copy">&copy; <span id="footer-year">2026</span> Washington Anesthesia Partners. All rights reserved.</p><div class="footer__bottom-links"><a href="../../index.html">Home</a><a href="../index.html">Blog</a><a href="../../privacy-policy.html">Privacy Policy</a></div></div></div></footer>
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const mobileNav = document.getElementById('mobile-nav');
+    hamburger.addEventListener('click', () => { const open = mobileNav.classList.toggle('open'); hamburger.setAttribute('aria-expanded', open); });
+    document.getElementById('footer-year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Acute Respiratory Distress Syndrome &mdash; Washington Anesthesia Partners</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../../css/styles.css" />
+</head>
+<body>
+  <header class="nav scrolled" role="banner">
+    <div class="container nav__inner">
+      <a href="../../index.html" class="nav__logo">Washington Anesthesia Partners<span>Ambulatory Anesthesia Services</span></a>
+      <nav aria-label="Primary"><ul class="nav__links"><li><a href="../../index.html#about">About</a></li><li><a href="../../index.html#services">Services</a></li><li><a href="../index.html">Blog</a></li><li><a href="../../index.html#contact" class="nav__cta">Contact Us</a></li></ul></nav>
+      <button class="nav__hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav"><span></span><span></span><span></span></button>
+    </div>
+    <nav class="nav__mobile" id="mobile-nav" aria-label="Mobile"><a href="../../index.html#about">About</a><a href="../../index.html#services">Services</a><a href="../index.html">Blog</a><a href="../../index.html#contact">Contact Us</a></nav>
+  </header>
+  <main>
+    <div class="post-hero">
+      <div class="container">
+        <div class="post-hero__meta"><time class="post-hero__date" datetime="2023-11-28">November 28, 2023</time></div>
+        <h1 class="post-hero__title">Acute Respiratory Distress Syndrome</h1>
+      </div>
+    </div>
+    <section class="post-body">
+      <div class="container">
+        <div class="post-body__layout">
+          <article class="post-content">
+            <img class="post-featured-img" src="../../images/blog-ards.jpg" alt="Acute Respiratory Distress Syndrome" />
+            <p>Acute Respiratory Distress Syndrome (ARDS) is a severe lung condition characterized by rapid onset of widespread inflammation in the lungs. It is a life-threatening condition that prevents enough oxygen from getting to the lungs and into the blood, thereby impacting various organs' ability to function effectively. Understanding ARDS is crucial for medical professionals, as it requires immediate treatment and careful management.</p>
+            <p>The pathophysiology of ARDS involves an injury to the lungs, either directly from lung pathogens or indirectly from other body injuries. This injury leads to an inflammatory response, causing fluid to leak into the alveoli—the tiny air sacs responsible for exchanging oxygen and carbon dioxide molecules to and from the bloodstream. This fluid leak impedes the optimal exchange of gases and leads to reduced oxygen levels in the blood (hypoxemia) and increased work of breathing.</p>
+            <p>There are various causes of ARDS. Direct lung injury can be due to pneumonia, aspiration of gastric contents, or inhalation injuries. Indirect causes include systemic infections (sepsis), severe trauma, drug overdose, and multiple blood transfusions. It is important to note that not all individuals exposed to these risk factors develop ARDS, suggesting a role of individual susceptibility.</p>
+            <p>Symptoms of ARDS typically develop within a few hours to a few days after the inciting injury or illness. Common symptoms include severe shortness of breath, labored and rapid breathing, low blood pressure, confusion, and extreme tiredness. Clinically, ARDS is diagnosed based on the symptoms, physical examination, chest X-ray or CT scan, and blood tests to assess oxygen levels.</p>
+            <p>The management of ARDS is primarily supportive, focusing on providing sufficient oxygen and supporting the patient's breathing. Mechanical ventilation is often required to ensure enough oxygen reaches the lungs and blood. This involves intubation and the use of a ventilator to control oxygen delivery and airway pressure. Mechanical ventilation is a double-edged sword, as it can also worsen lung injury if not carefully managed.</p>
+            <p>In addition to respiratory support, treating the underlying cause of ARDS is crucial. This may involve antibiotics for infections, medications to treat underlying health conditions, or surgery in cases of trauma. Fluid management is another critical aspect of care, as too much fluid can worsen lung edema, but too little can impact blood pressure and organ perfusion. The role of prone positioning has also been recognized as beneficial, improving oxygenation and reducing mortality.</p>
+            <p>Recovery from ARDS can be a lengthy process, often requiring physical therapy to regain strength and lung function. Some patients may experience long-term effects, such as persistent shortness of breath and fatigue, which can last for months or even years after recovery. Despite advancements in understanding and managing ARDS, it remains a significant challenge in critical care, with ongoing research focused on improving outcomes for affected patients.</p>
+          </article>
+          <aside class="post-sidebar">
+            <a href="../index.html" class="post-sidebar__back">&larr; Back to Blog</a>
+            <div class="post-sidebar__related">
+              <div class="post-sidebar__related-title">More Posts</div>
+              <div class="related-post"><a href="../preoperative-oral-medication/index.html">Preoperative Oral Medication for Analgesia</a><span>May 18, 2026</span></div>
+              <div class="related-post"><a href="../nsaids-for-postoperative-analgesia/index.html">Safety Profile of NSAIDs for Postoperative Analgesia</a><span>April 15, 2026</span></div>
+              <div class="related-post"><a href="../scope-of-anesthesia-practice/index.html">The Scope of Anesthesia Practice</a><span>April 28, 2023</span></div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer" role="contentinfo"><div class="container"><div class="footer__bottom" style="border-top:none;padding-top:0;"><p class="footer__copy">&copy; <span id="footer-year">2026</span> Washington Anesthesia Partners. All rights reserved.</p><div class="footer__bottom-links"><a href="../../index.html">Home</a><a href="../index.html">Blog</a><a href="../../privacy-policy.html">Privacy Policy</a></div></div></div></footer>
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const mobileNav = document.getElementById('mobile-nav');
+    hamburger.addEventListener('click', () => { const open = mobileNav.classList.toggle('open'); hamburger.setAttribute('aria-expanded', open); });
+    document.getElementById('footer-year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

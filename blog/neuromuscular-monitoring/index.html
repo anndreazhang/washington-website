@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rethinking the Use of Acceleromyography for Neuromuscular Monitoring &mdash; Washington Anesthesia Partners</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../../css/styles.css" />
+</head>
+<body>
+  <header class="nav scrolled" role="banner">
+    <div class="container nav__inner">
+      <a href="../../index.html" class="nav__logo">Washington Anesthesia Partners<span>Ambulatory Anesthesia Services</span></a>
+      <nav aria-label="Primary"><ul class="nav__links"><li><a href="../../index.html#about">About</a></li><li><a href="../../index.html#services">Services</a></li><li><a href="../index.html">Blog</a></li><li><a href="../../index.html#contact" class="nav__cta">Contact Us</a></li></ul></nav>
+      <button class="nav__hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav"><span></span><span></span><span></span></button>
+    </div>
+    <nav class="nav__mobile" id="mobile-nav" aria-label="Mobile"><a href="../../index.html#about">About</a><a href="../../index.html#services">Services</a><a href="../index.html">Blog</a><a href="../../index.html#contact">Contact Us</a></nav>
+  </header>
+  <main>
+    <div class="post-hero">
+      <div class="container">
+        <div class="post-hero__meta"><time class="post-hero__date" datetime="2026-03-02">March 2, 2026</time></div>
+        <h1 class="post-hero__title">Rethinking the Use of Acceleromyography for Neuromuscular Monitoring</h1>
+      </div>
+    </div>
+    <section class="post-body">
+      <div class="container">
+        <div class="post-body__layout">
+          <article class="post-content">
+            <img class="post-featured-img" src="../../images/blog-neuromuscular.jpg" alt="Rethinking the Use of Acceleromyography for Neuromuscular Monitoring" />
+            <p>Quantitative neuromuscular monitoring has become an essential component of modern anesthetic practice, driven by persistent evidence that residual neuromuscular blockade remains common and clinically significant. Acceleromyography (AMG), which measures acceleration of a muscle response to peripheral nerve stimulation, has been widely used for neuromuscular monitoring because of its relative simplicity and device portability. However, evolving data and technological advances have prompted reconsideration of its limitations, calibration requirements, and interpretation in routine clinical care.</p>
+            <p>Acceleromyography is based on Newton's second law: force is proportional to acceleration when mass is constant. In practice, AMG devices typically measure acceleration of the thumb following ulnar nerve stimulation, calculating train-of-four (TOF) ratios and other indices of neuromuscular transmission. Compared with subjective peripheral nerve stimulators, AMG offers quantification and improved detection of residual blockade. Yet the technique is not synonymous with true force measurement, as provided by mechanomyography (MMG), the historical gold standard. AMG values may exceed unity at baseline, with TOF ratios frequently greater than 1.0 in the absence of neuromuscular blocking agents. This phenomenon complicates interpretation and requires normalization to pre-block baseline values to avoid overestimation of recovery.</p>
+            <p>Failure to calibrate and normalize AMG readings remains a major source of error and perhaps the biggest drawback to its use for neuromuscular monitoring. Without baseline calibration, a TOF ratio of 0.9 may not represent full recovery, particularly if the patient's baseline exceeds 1.0. Normalization adjusts post-reversal values relative to the individual's baseline, improving correlation with pharyngeal function and reducing the risk of residual weakness. Despite recommendations, normalization is inconsistently performed in busy operating room environments. Rethinking AMG use therefore entails renewed emphasis on calibration protocols, staff education, and integration of device prompts that facilitate baseline acquisition before neuromuscular blocker administration.</p>
+            <p>Another limitation of AMG relates to preload and thumb mobility. AMG accuracy depends on unrestricted thumb movement and consistent preload to ensure reliable acceleration measurements. Surgical positioning, arm tucking, or interference from drapes can dampen movement and distort results. In contrast, electromyography (EMG) measures compound muscle action potentials without requiring motion, making it less susceptible to mechanical constraints. EMG-based monitors have demonstrated improved agreement with MMG and greater ease of use when access to the hand is limited. As EMG technology becomes more available, clinicians must consider whether AMG remains the optimal default modality for neuromuscular monitoring. The introduction of sugammadex has altered the landscape of neuromuscular management but has not obviated the need for quantitative monitoring. Rapid reversal may create a false sense of security if recovery is assumed rather than confirmed. AMG can document restoration of neuromuscular function following reversal; however, accurate interpretation remains contingent on proper technique. Furthermore, in the context of deep blockade or profound rocuronium exposure, AMG may be less sensitive at very low twitch amplitudes compared with EMG.</p>
+            <p>While AMG represented a substantial advance over qualitative assessment, its limitations are increasingly apparent. However, rather than abandoning the modality outright, clinicians should critically appraise its implementation, ensure baseline normalization, and remain open to adopting alternative technologies when they offer measurable improvements in accuracy and workflow.</p>
+          </article>
+          <aside class="post-sidebar">
+            <a href="../index.html" class="post-sidebar__back">&larr; Back to Blog</a>
+            <div class="post-sidebar__related">
+              <div class="post-sidebar__related-title">More Posts</div>
+              <div class="related-post"><a href="../preoperative-oral-medication/index.html">Preoperative Oral Medication for Analgesia</a><span>May 18, 2026</span></div>
+              <div class="related-post"><a href="../nsaids-for-postoperative-analgesia/index.html">Safety Profile of NSAIDs for Postoperative Analgesia</a><span>April 15, 2026</span></div>
+              <div class="related-post"><a href="../scope-of-anesthesia-practice/index.html">The Scope of Anesthesia Practice</a><span>April 28, 2023</span></div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer" role="contentinfo"><div class="container"><div class="footer__bottom" style="border-top:none;padding-top:0;"><p class="footer__copy">&copy; <span id="footer-year">2026</span> Washington Anesthesia Partners. All rights reserved.</p><div class="footer__bottom-links"><a href="../../index.html">Home</a><a href="../index.html">Blog</a><a href="../../privacy-policy.html">Privacy Policy</a></div></div></div></footer>
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const mobileNav = document.getElementById('mobile-nav');
+    hamburger.addEventListener('click', () => { const open = mobileNav.classList.toggle('open'); hamburger.setAttribute('aria-expanded', open); });
+    document.getElementById('footer-year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

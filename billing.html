@@ -1,0 +1,152 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Billing — Washington Anesthesia Partners</title>
+  <meta name="description" content="Questions about claims, coding, invoices, or billing processes? Contact the Washington Anesthesia Partners billing team." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <header class="nav scrolled" id="nav" role="banner">
+    <div class="container nav__inner">
+      <a href="index.html" class="nav__logo" aria-label="Washington Anesthesia Partners — Home">
+        Washington Anesthesia Partners
+        <span>Ambulatory Anesthesia Services</span>
+      </a>
+      <nav aria-label="Primary">
+        <ul class="nav__links">
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="blog/index.html">Blog</a></li>
+          <li><a href="index.html#contact" class="nav__cta">Contact Us</a></li>
+        </ul>
+      </nav>
+      <button class="nav__hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <nav class="nav__mobile" id="mobile-nav" aria-label="Mobile">
+      <a href="index.html#about">About</a>
+      <a href="index.html#services">Services</a>
+      <a href="blog/index.html">Blog</a>
+      <a href="index.html#contact">Contact Us</a>
+    </nav>
+  </header>
+
+  <main class="form-page">
+
+    <div class="form-page__hero">
+      <div class="container">
+        <p class="form-page__hero-eyebrow">Contact</p>
+        <h1 class="form-page__hero-title">Billing</h1>
+      </div>
+    </div>
+
+    <div class="form-page__body">
+      <div class="container">
+        <div class="form-page__layout">
+
+          <div>
+            <div class="form-intro">
+              <p>Questions about a claim, invoice, coding, or your billing account? Reach out to our billing team and we'll respond promptly.</p>
+            </div>
+
+            <div class="form-box">
+              <form id="billing-form" novalidate>
+
+                <div class="form-group">
+                  <label for="contact-name">Contact Name <span aria-hidden="true" style="color:var(--color-error)">*</span></label>
+                  <input type="text" id="contact-name" name="contact_name" placeholder="Your full name" required />
+                </div>
+
+                <div class="form-group">
+                  <label for="phone">Phone</label>
+                  <input type="tel" id="phone" name="phone" placeholder="(xxx) xxx-xxxx" />
+                </div>
+
+                <div class="form-group">
+                  <label for="email">Email <span aria-hidden="true" style="color:var(--color-error)">*</span></label>
+                  <input type="email" id="email" name="email" placeholder="your@email.com" required />
+                </div>
+
+                <div class="form-group">
+                  <label for="message">Message <span aria-hidden="true" style="color:var(--color-error)">*</span></label>
+                  <textarea id="message" name="message" placeholder="Describe your billing question or issue." required></textarea>
+                </div>
+
+                <div class="form-group form-group--file">
+                  <label for="file">
+                    <span aria-hidden="true">📎</span> Attach a file (optional)
+                  </label>
+                  <input type="file" id="file" name="file" />
+                </div>
+
+                <div class="form-check">
+                  <input type="checkbox" id="privacy" name="privacy" required />
+                  <label for="privacy">I agree to the <a href="privacy-policy.html">Privacy Policy</a> <span aria-hidden="true" style="color:var(--color-error)">*</span></label>
+                </div>
+
+                <button type="submit" class="btn btn-evergreen form-submit">Send Message</button>
+
+                <div class="form-message" id="form-msg" role="alert" aria-live="polite"></div>
+              </form>
+            </div>
+          </div>
+
+          <aside class="form-sidebar">
+            <div class="form-sidebar__card">
+              <h2 class="form-sidebar__card-title">Billing Support</h2>
+              <p>Our billing team handles precise coding, claims management, and prompt resolution of billing issues. We're here to help.</p>
+            </div>
+
+            <div class="form-sidebar__other-links">
+              <div class="form-sidebar__other-title">Other Contact Options</div>
+              <div class="form-sidebar__links">
+                <a href="general-inquiries.html">General Inquiries <span aria-hidden="true">→</span></a>
+                <a href="clients.html">Clients <span aria-hidden="true">→</span></a>
+                <a href="anesthesia-providers.html">Anesthesia Providers <span aria-hidden="true">→</span></a>
+              </div>
+            </div>
+          </aside>
+
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__bottom" style="border-top:none;padding-top:0;">
+        <p class="footer__copy">&copy; <span id="footer-year">2026</span> Washington Anesthesia Partners. All rights reserved.</p>
+        <div class="footer__bottom-links">
+          <a href="/">Home</a>
+          <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const mobileNav = document.getElementById('mobile-nav');
+    hamburger.addEventListener('click', () => {
+      const open = mobileNav.classList.toggle('open');
+      hamburger.setAttribute('aria-expanded', open);
+    });
+    document.getElementById('footer-year').textContent = new Date().getFullYear();
+    document.getElementById('billing-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const msg = document.getElementById('form-msg');
+      msg.className = 'form-message success';
+      msg.textContent = 'Thank you — your message has been sent. We\'ll be in touch shortly.';
+      this.reset();
+    });
+  </script>
+</body>
+</html>

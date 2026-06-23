@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reducing Maternal Mortality from Peri-partum Hemorrhage &mdash; Washington Anesthesia Partners</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../../css/styles.css" />
+</head>
+<body>
+  <header class="nav scrolled" role="banner">
+    <div class="container nav__inner">
+      <a href="../../index.html" class="nav__logo">Washington Anesthesia Partners<span>Ambulatory Anesthesia Services</span></a>
+      <nav aria-label="Primary"><ul class="nav__links"><li><a href="../../index.html#about">About</a></li><li><a href="../../index.html#services">Services</a></li><li><a href="../index.html">Blog</a></li><li><a href="../../index.html#contact" class="nav__cta">Contact Us</a></li></ul></nav>
+      <button class="nav__hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav"><span></span><span></span><span></span></button>
+    </div>
+    <nav class="nav__mobile" id="mobile-nav" aria-label="Mobile"><a href="../../index.html#about">About</a><a href="../../index.html#services">Services</a><a href="../index.html">Blog</a><a href="../../index.html#contact">Contact Us</a></nav>
+  </header>
+  <main>
+    <div class="post-hero">
+      <div class="container">
+        <div class="post-hero__meta"><time class="post-hero__date" datetime="2024-06-04">June 4, 2024</time></div>
+        <h1 class="post-hero__title">Reducing Maternal Mortality from Peri-partum Hemorrhage</h1>
+      </div>
+    </div>
+    <section class="post-body">
+      <div class="container">
+        <div class="post-body__layout">
+          <article class="post-content">
+            <img class="post-featured-img" src="../../images/blog-maternal.jpg" alt="Reducing Maternal Mortality from Peri-partum Hemorrhage" />
+            <p>Peripartum hemorrhage (PPH) remains one of the leading causes of maternal mortality worldwide, particularly in low and middle-income countries. This severe complication, which occurs just before or after childbirth, involves excessive bleeding that can quickly become life-threatening if not promptly and effectively managed. Addressing this critical issue requires a multi-faceted approach that includes improving preventive strategies, enhancing clinical response, and strengthening healthcare systems.</p>
+            <p>The cornerstone of preventing PPH lies in the identification and management of risk factors. Several conditions can predispose a woman to PPH, including placenta previa, placental abruption, uterine atony, prolonged labor, and a history of PPH in previous pregnancies. Early identification of these risk factors through routine prenatal care allows healthcare providers to plan deliveries in facilities equipped to handle complex cases, thereby significantly improving outcomes.</p>
+            <p>Effective management of PPH starts with standardized protocols. Active management of the third stage of labor (AMTSL) is recommended by the World Health Organization (WHO) as a primary strategy for preventing PPH. This protocol involves the administration of a uterotonic drug immediately after the birth of the baby, controlled cord traction, and uterine massage after delivery of the placenta. Training all birth attendants in AMTSL is crucial for its widespread and correct implementation.</p>
+            <p>Rapid recognition and treatment of PPH when it occurs are vital. The first step is to determine the cause of the hemorrhage, as treatment varies depending on the underlying condition. Uterine atony can often be managed with additional uterotonic agents, whereas retained placental fragments may require manual removal or surgical intervention. Establishing protocols for immediate response, including the availability of essential drugs and blood products for transfusion, is essential in stabilizing the patient quickly.</p>
+            <p>Access to appropriate surgical intervention is another critical component. In cases where medical management is unsuccessful, surgical options such as uterine artery embolization or hysterectomy may be life-saving. Ensuring that facilities equipped with the necessary surgical capabilities are accessible, particularly in rural or underserved areas, is a challenge that must be addressed through health system strengthening.</p>
+            <p>Finally, improving postpartum care is essential for monitoring women who have experienced significant bleeding. Postpartum follow-up should include checking for signs of anemia or infection, both of which can complicate recovery from PPH. Providing support and counseling, particularly in cases of severe hemorrhage, is also important for the psychological well-being of the patient.</p>
+          </article>
+          <aside class="post-sidebar">
+            <a href="../index.html" class="post-sidebar__back">&larr; Back to Blog</a>
+            <div class="post-sidebar__related">
+              <div class="post-sidebar__related-title">More Posts</div>
+              <div class="related-post"><a href="../preoperative-oral-medication/index.html">Preoperative Oral Medication for Analgesia</a><span>May 18, 2026</span></div>
+              <div class="related-post"><a href="../nsaids-for-postoperative-analgesia/index.html">Safety Profile of NSAIDs for Postoperative Analgesia</a><span>April 15, 2026</span></div>
+              <div class="related-post"><a href="../scope-of-anesthesia-practice/index.html">The Scope of Anesthesia Practice</a><span>April 28, 2023</span></div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer" role="contentinfo"><div class="container"><div class="footer__bottom" style="border-top:none;padding-top:0;"><p class="footer__copy">&copy; <span id="footer-year">2026</span> Washington Anesthesia Partners. All rights reserved.</p><div class="footer__bottom-links"><a href="../../index.html">Home</a><a href="../index.html">Blog</a><a href="../../privacy-policy.html">Privacy Policy</a></div></div></div></footer>
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const mobileNav = document.getElementById('mobile-nav');
+    hamburger.addEventListener('click', () => { const open = mobileNav.classList.toggle('open'); hamburger.setAttribute('aria-expanded', open); });
+    document.getElementById('footer-year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
