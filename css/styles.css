@@ -8,20 +8,20 @@
 /* ── CSS Custom Properties ── */
 :root {
   /* Colors */
-  --color-forest-deep:   #0D2818;
-  --color-forest-mid:    #174030;
-  --color-evergreen:     #1B6B43;
-  --color-sage-bright:   #2A9960;
-  --color-amber:         #B87333;
-  --color-amber-light:   #F5EBD9;
+  --color-forest-deep:   #0D1F3C;
+  --color-forest-mid:    #1A3460;
+  --color-evergreen:     #2B4FA0;
+  --color-sage-bright:   #3D65C4;
+  --color-amber:         #C9A84C;
+  --color-amber-light:   #F5EDD5;
 
-  --color-warm-white:    #FAFAF8;
-  --color-cream:         #F2F0EA;
-  --color-border:        #DDD9CE;
+  --color-warm-white:    #F8F9FA;
+  --color-cream:         #EEF0F3;
+  --color-border:        #D4D8E2;
 
-  --color-text-dark:     #0C1A10;
-  --color-text-body:     #374840;
-  --color-text-muted:    #7A8C7E;
+  --color-text-dark:     #0A1628;
+  --color-text-body:     #374860;
+  --color-text-muted:    #7A8A9E;
 
   --color-success:       #16A34A;
   --color-error:         #DC2626;
@@ -59,9 +59,9 @@
   --radius-xl:   28px;
   --radius-full: 9999px;
 
-  --shadow-sm:  0 2px 8px  rgba(13,40,24,0.06);
-  --shadow-md:  0 8px 24px rgba(13,40,24,0.10);
-  --shadow-lg:  0 20px 48px rgba(13,40,24,0.14);
+  --shadow-sm:  0 2px 8px  rgba(13,31,60,0.06);
+  --shadow-md:  0 8px 24px rgba(13,31,60,0.10);
+  --shadow-lg:  0 20px 48px rgba(13,31,60,0.14);
 
   /* Layout */
   --nav-height: 72px;
@@ -163,10 +163,10 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .btn-primary:hover { background: var(--color-forest-mid); }
 
 .btn-evergreen {
-  background: var(--color-evergreen);
-  color: #fff;
+  background: var(--color-amber);
+  color: var(--color-forest-deep);
 }
-.btn-evergreen:hover { background: var(--color-sage-bright); }
+.btn-evergreen:hover { background: #D4B55A; }
 
 .btn-ghost {
   background: transparent;
@@ -249,12 +249,12 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   font-weight: 600;
   padding: 0.55rem 1.25rem;
   border-radius: var(--radius-sm);
-  background: var(--color-evergreen);
-  color: #fff !important;
+  background: var(--color-amber);
+  color: var(--color-forest-deep) !important;
   transition: background 0.2s ease !important;
 }
 
-.nav__cta:hover { background: var(--color-sage-bright) !important; }
+.nav__cta:hover { background: #D4B55A !important; }
 
 .nav__hamburger {
   display: none;
@@ -305,7 +305,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   align-items: center;
   position: relative;
   overflow: hidden;
-  background: linear-gradient(160deg, #051610 0%, #0D2818 35%, #174030 68%, #1B6B43 100%);
+  background: linear-gradient(160deg, #050F1E 0%, #0D1F3C 35%, #1A3460 68%, #2B4FA0 100%);
 }
 
 /* Subtle texture overlay */
@@ -313,7 +313,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   content: '';
   position: absolute;
   inset: 0;
-  background: radial-gradient(ellipse 80% 60% at 70% 50%, rgba(42,153,96,0.12) 0%, transparent 70%);
+  background: radial-gradient(ellipse 80% 60% at 70% 50%, rgba(61,101,196,0.12) 0%, transparent 70%);
   pointer-events: none;
 }
 
@@ -438,7 +438,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   width: 40px;
   height: 40px;
   border-radius: var(--radius-md);
-  background: #D1F0DC;
+  background: #D6E0F5;
   color: var(--color-evergreen);
   display: flex;
   align-items: center;
@@ -554,8 +554,8 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   flex-shrink: 0;
 }
 
-.icon-green  { background: #D1F0DC; }
-.icon-forest { background: #C7DDD0; }
+.icon-green  { background: #D6E0F5; }
+.icon-forest { background: #C5D4EE; }
 .icon-amber  { background: var(--color-amber-light); }
 .icon-sage   { background: #E0F3EB; }
 
@@ -609,6 +609,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   transition: box-shadow 0.25s ease, transform 0.25s ease;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .blog-card:hover {
@@ -673,9 +674,19 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   font-weight: 600;
   color: var(--color-evergreen);
   transition: gap 0.2s ease;
+  position: relative;
+  z-index: 2;
 }
 
-.blog-card__link:hover { gap: var(--space-3); }
+.blog-card__link::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  transform: scale(100);
+}
+
+.blog-card:hover .blog-card__link { gap: var(--space-3); }
 
 /* ── Contact section ── */
 .contact-section {
@@ -727,8 +738,8 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   width: 52px;
   height: 52px;
   border-radius: var(--radius-md);
-  background: rgba(42,153,96,0.20);
-  border: 1px solid rgba(42,153,96,0.30);
+  background: rgba(61,101,196,0.20);
+  border: 1px solid rgba(61,101,196,0.30);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -875,7 +886,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 
 .form-page__hero {
   height: 260px;
-  background: linear-gradient(135deg, #0D2818 0%, #174030 55%, #1B6B43 100%);
+  background: linear-gradient(135deg, #0D1F3C 0%, #1A3460 55%, #2B4FA0 100%);
   display: flex;
   align-items: flex-end;
   padding-bottom: var(--space-10);
@@ -1128,7 +1139,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .blog-hero {
   padding-top: calc(var(--nav-height) + var(--space-16));
   padding-bottom: var(--space-16);
-  background: linear-gradient(135deg, #0D2818 0%, #174030 55%, #1B6B43 100%);
+  background: linear-gradient(135deg, #0D1F3C 0%, #1A3460 55%, #2B4FA0 100%);
 }
 
 .blog-hero__title {
@@ -1162,7 +1173,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .post-hero {
   padding-top: calc(var(--nav-height) + var(--space-12));
   padding-bottom: var(--space-12);
-  background: linear-gradient(135deg, #0D2818 0%, #174030 60%, #1B6B43 100%);
+  background: linear-gradient(135deg, #0D1F3C 0%, #1A3460 60%, #2B4FA0 100%);
 }
 
 .post-hero__meta {
@@ -1452,7 +1463,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 /* ── Hero with real background image ── */
 .hero {
   background:
-    linear-gradient(160deg, rgba(5,22,16,0.91) 0%, rgba(13,40,24,0.88) 35%, rgba(23,64,48,0.82) 68%, rgba(27,107,67,0.72) 100%),
+    linear-gradient(160deg, rgba(5,15,30,0.91) 0%, rgba(13,31,60,0.88) 35%, rgba(26,52,96,0.82) 68%, rgba(43,79,160,0.72) 100%),
     url('../images/hero.jpg') center / cover no-repeat;
 }
 
@@ -1564,9 +1575,9 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .contact-info-panel__email {
   display: block;
   color: var(--color-sage-bright);
-  font-size: var(--text-sm);
+  font-size: 0.75rem;
   text-decoration: none;
-  word-break: break-all;
+  white-space: nowrap;
 }
 
 .contact-info-panel__email:hover { text-decoration: underline; }
