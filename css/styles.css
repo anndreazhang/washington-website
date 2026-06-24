@@ -1693,3 +1693,25 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   .form-row { grid-template-columns: 1fr; }
   .contact-form-panel { padding: var(--space-6); }
 }
+
+/* ── Scroll reveal ── */
+.reveal {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.reveal.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-stagger > .reveal:nth-child(2) { transition-delay: 0.09s; }
+.reveal-stagger > .reveal:nth-child(3) { transition-delay: 0.18s; }
+.reveal-stagger > .reveal:nth-child(4) { transition-delay: 0.27s; }
+.reveal-stagger > .reveal:nth-child(5) { transition-delay: 0.36s; }
+.reveal-stagger > .reveal:nth-child(6) { transition-delay: 0.45s; }
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal { opacity: 1; transform: none; transition: none; }
+}
