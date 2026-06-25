@@ -1663,7 +1663,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .contact-info-panel__value {
   display: block;
   color: #fff;
-  font-size: 1rem;
+  font-size: var(--text-sm);
   font-weight: 600;
   text-decoration: none;
 }
@@ -1672,8 +1672,8 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 
 .contact-info-panel__email {
   display: block;
-  color: var(--color-sage-bright);
-  font-size: 0.75rem;
+  color: #fff;
+  font-size: var(--text-sm);
   text-decoration: none;
   white-space: nowrap;
 }
