@@ -413,6 +413,7 @@
           </article>
 
         </div>
+        <nav class="blog-pagination" id="blog-pagination" aria-label="Blog page navigation"></nav>
       </div>
     </section>
 
@@ -464,6 +465,57 @@
       hamburger.setAttribute('aria-expanded', open);
     });
     document.getElementById('footer-year').textContent = new Date().getFullYear();
+
+    (function () {
+      var PER_PAGE = 9;
+      var cards = Array.prototype.slice.call(document.querySelectorAll('.blog-card'));
+      var totalPages = Math.ceil(cards.length / PER_PAGE);
+      var nav = document.getElementById('blog-pagination');
+      var current = 1;
+
+      function showPage(n) {
+        current = n;
+        cards.forEach(function (card, i) {
+          card.style.display = (i >= (n - 1) * PER_PAGE && i < n * PER_PAGE) ? '' : 'none';
+        });
+        renderNav();
+        document.querySelector('.blog-hero').scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+
+      function renderNav() {
+        nav.innerHTML = '';
+
+        var prev = document.createElement('button');
+        prev.className = 'blog-pagination__btn';
+        prev.setAttribute('aria-label', 'Previous page');
+        prev.innerHTML = '&larr;';
+        prev.disabled = current === 1;
+        prev.addEventListener('click', function () { showPage(current - 1); });
+        nav.appendChild(prev);
+
+        for (var p = 1; p <= totalPages; p++) {
+          (function (page) {
+            var btn = document.createElement('button');
+            btn.className = 'blog-pagination__btn' + (page === current ? ' blog-pagination__btn--active' : '');
+            btn.textContent = page;
+            btn.setAttribute('aria-label', 'Page ' + page);
+            if (page === current) btn.setAttribute('aria-current', 'page');
+            btn.addEventListener('click', function () { showPage(page); });
+            nav.appendChild(btn);
+          })(p);
+        }
+
+        var next = document.createElement('button');
+        next.className = 'blog-pagination__btn';
+        next.setAttribute('aria-label', 'Next page');
+        next.innerHTML = '&rarr;';
+        next.disabled = current === totalPages;
+        next.addEventListener('click', function () { showPage(current + 1); });
+        nav.appendChild(next);
+      }
+
+      showPage(1);
+    })();
   </script>
 </body>
 </html>
